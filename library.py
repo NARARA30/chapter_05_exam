@@ -74,3 +74,18 @@ pkg_resources.get_distribution('library_name').version
 
 pip show library_name
 
+#라이브러리 정보를 확인하는 또 다른 방법
+## 파이썬 내장 함수인 help()혹은 내장 기능인 pydoc를 활용하여 해당 라이브러리의 정보 확인 가능
+
+import pandas as pd
+
+help(pd)
+
+#내장 함수 dir()을 사용한 속성 및 메서드 확인
+## 라이브러리나 모듈에 포함된 이름(함수, 클래스, 변수 등)을 리스트 형태로 확인할 수 있음
+## 객체를 인자로 넘기지 않으면, 현재 지역 범위에서 사용할 수 있는 이름들의 리스트를 반환
+
+import math
+
+print(dir(math))
+
